@@ -1,3 +1,6 @@
+## Platform Strategy Diagram
+
+```mermaid
 graph TD;
     A[Current Platform] -->|Migrate| B[Target Platform]
     subgraph Current Platform
