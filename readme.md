@@ -13,6 +13,10 @@ graph TD;
         T2[GitHub]
         T3[GitHub Actions]
     end
-    C1 -->|Container Orchestration| T1
-    C2 -->|Source Code Management| T2
-    C3 -->|CI/CD| T3
+    subgraph CI/CD
+        C3 -->|CI/CD| T3
+    end
+    subgraph GCP Platform
+        C1 -->|Container Orchestration| T1
+        C2 -->|Source Code Management| T2
+    end
